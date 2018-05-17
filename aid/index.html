@@ -56,6 +56,33 @@
 
       <!-- 将文本内容替换成一张背景图 -->
       <h1 class="text-hide">text-hide</h1>
+
+      <!-- 针对不同屏幕显示或隐藏 -->
+      <!-- 以lg为例 -->
+      <div class="row">
+        <!-- 只在超大屏幕(lg)显示 -->
+        <div class="col-lg-2 visiable-lg-block">
+          visiable-lg-block
+        </div>
+        <div class="col-lg-2 visiable-lg-inline">
+          visiable-lg-inline
+        </div>
+        <div class="col-lg-2 visiable-lg-inline-block">
+          visiable-lg-inline-block
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2 hidden-lg">
+          <!--  只在lg隐藏  -->
+          hidden-lg
+        </div>
+      </div>
+      <!-- 关于block inline inline-block -->
+      <!-- block 元素与父元素同宽 -->
+      <!-- inline 元素與為並排顯示,其容器大小以內容物判定,無法設定寬高,上下外距等屬性... -->
+      <!-- inline-block 簡單來說為排列方式以inline的方式呈現,但擁有block的屬性,可以設定寬高,上下外距等屬性 -->
+
     </div>
   </body>
 </html>
